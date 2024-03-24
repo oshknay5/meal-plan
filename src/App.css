@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+body{
+margin: 0;
+padding: 5px;
+background: url(food.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+font-family: "Montserrat", sans-serif;
+}
+.btn-add{
+  background: rgb(213, 244, 248);
+  font-size: 15px;
+  padding: 15px 40px;
+  border-radius: 20px;
+  border: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-delete{
+  background: none;
+  font-size: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  color: rgb(242, 133, 133);
+  font-weight: 400;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+background-color: rgb(240, 248, 255);
+border-radius: 20px;
+font-size: 30px;
+padding: 15px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.whole-plan{
+  width: 70% ;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.myInput{
+  width: 70% ;
+  height: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  display: block;
+  margin: 30px 0px 0px 10px;
+}
+
+textarea{
+  border: 1px solid rgb(238, 211, 217);
+  width: 70%;
+  height: 200px;
+  border-radius: 20px;
+  margin: 30px 0px 0px 10px;
+  padding: 10px;
+}
+.selected{
+  background-color: rgb(240, 241, 142);
+}
+.default{
+  background-color: rgb(190, 240, 233);
+}
+.noselected_par{
+  font-size: 18px;
+  color: aliceblue;
+}
+
+@media all and (max-width:800px){
+  h1{
+    font-size: 18px;
+    padding: 5px;
   }
-  to {
-    transform: rotate(360deg);
+  .myList{
+    max-width: 50%;
+    font-size: 12px;
   }
 }
